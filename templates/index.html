@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Spam/Ham Detector</title>
+</head>
+<body>
+    <h2>Email Spam/Ham Detection (Bag of Words)</h2>
+    <form method="post">
+        <textarea name="email_text" rows="10" cols="60" placeholder="Paste your email text here..." required></textarea><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
